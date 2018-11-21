@@ -1,4 +1,3 @@
-//Questão das cabines do teleférico
 logic[25:0] clock_atraso;
 	always_ff @(posedge clk_2) begin
 		clock_atraso <= clock_atraso + 1;
@@ -89,6 +88,7 @@ logic[25:0] clock_atraso;
 					alarme <= 1;
 					subir_A <= 0;
 					subir_B <= 0;
+					state <= q9;
 				end
 				else begin                              
 					subir_A <= b_topo;                  // caso estejam perto da base, motor voltar a funcionar no modo lento e vai para o próximo estado
