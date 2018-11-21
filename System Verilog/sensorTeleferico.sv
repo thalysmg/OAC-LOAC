@@ -1,4 +1,4 @@
-logic[25:0] clock_atraso;
+	logic[25:0] clock_atraso;
 	always_ff @(posedge clk_2) begin
 		clock_atraso <= clock_atraso + 1;
 	end
