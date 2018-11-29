@@ -1,10 +1,10 @@
-logic[25:0] clock_atraso;
+	logic[25:0] clock_atraso;
 	always_ff @(posedge clk_2) begin
 		clock_atraso <= clock_atraso + 1;
 	end
-	No simulador não precisa desse atraso no clock
+	
 
-	questão das cancelas do estacionamento 1
+	//questão das cancelas do estacionamento 1
 
 	parameter q0 = 0, q1 = 1, q2 = 2, q3 = 3;
 	logic cancelaEntrada, cancelaSaida, cancelaEntradaAberta, cancelaSaidaAberta, res;
